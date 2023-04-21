@@ -1,7 +1,7 @@
 const log = console.log;
 const api = require('binance');
 const express = require('express');
-const app = express();
+const app = express(kk);
 const server = app.listen('4000',() => log(`Kline Data Server started on port 4000`));
 const socket = require('socket.io');
 const io = socket(server);
